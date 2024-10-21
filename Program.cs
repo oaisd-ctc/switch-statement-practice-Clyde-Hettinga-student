@@ -30,28 +30,42 @@
     {
         string converted = "";
         
-        if (num == 0)
-            converted = "zero";
-        else if (num == 1)
-            converted = "one";
-        else if (num == 2)
-            converted = "two";
-        else if (num == 3)
-            converted = "three";
-        else if (num == 4)
-            converted = "four";
-        else if (num == 5)
-            converted = "five";
-        else if (num == 6)
-            converted = "six";
-        else if (num == 7)
-            converted = "seven";
-        else if (num == 8)
-            converted = "eight";
-        else if (num == 9)
-            converted = "nine";
-        else if (num == 10)
-            converted = "ten";
+        switch (num)
+        {
+            case 0:
+                converted = "zero";
+                break;
+            case 1:
+                converted = "one";
+                break;
+            case 2:
+                converted = "two";
+                break;
+            case 3:
+                converted = "three";
+                break;
+            case 4:
+                converted = "four";
+                break;
+            case 5:
+                converted = "five";
+                break;
+            case 6:
+                converted = "six";
+                break;
+            case 7:
+                converted = "seven";
+                break;
+            case 8:
+                converted = "eight";
+                break;
+            case 9: 
+                converted = "nine";
+                break;
+            case 10:
+                converted = "ten";
+                break;
+        }
 
         Console.WriteLine($"Your number is {converted}.");
     }
